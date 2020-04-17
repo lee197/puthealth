@@ -1,5 +1,4 @@
-Tabs to include:
-# Project Title
+# Lyne Chemicals Design Guide: 
 
 ## Home:
 It can include the company logo and graphics similar to websites listed.
@@ -7,38 +6,43 @@ We want to input images with a tagline or key words in the home page.
 
 ## About （drop down white column）
 
- Who are we?
-Lyne Chemicals Limited is a distributor of ingredients for the food and pharmaceutical industry. We introduce a wide range of ingredients to bring high quality finished products to the market. We wish to   enhance human health and wellbeing. Lyne Chemicals was established in 2016 and have built it up with experience over time. We are excited to share our journey with you.......
+### Who are we?
+* Lyne Chemicals Limited is a distributor of ingredients for the food and pharmaceutical industry. 
+* We introduce a wide range of ingredients to bring high quality finished products to the market. 
+* We wish to enhance human health and wellbeing. 
+* Lyne Chemicals was established in 2016 and have built it up with experience over time. We are excited to share our journey with you.......
 
-What do we do?
-We import high quality ingredients and distribute to our many customers around the globe. We want to ensure that we provide a service that is efficient and inclusive. We are eager to make our customers feel involved at every step of the way. If you are seeking any particular product, our procurement team will assist to provide you with the best quality and price. Working with our partners who provide personalized customer service and logistic support so we can meet your expectations. Lyne Chemicals believes in bringing excellent products to the market that will make a positive impact on consumers’ lives. 
+### What do we do?
+* We import high quality ingredients and distribute to our many customers around the globe. 
+* We want to ensure that we provide a service that is efficient and inclusive. We are eager to make our customers feel involved at every step of the way. 
+* If you are seeking any particular product, our procurement team will assist to provide you with the best quality and price. Working with our partners who provide personalized customer service and logistic support so we can meet your expectations.
+* Lyne Chemicals believes in bringing excellent products to the market that will make a positive impact on consumers’ lives. 
 
 
-Our Values  (Bullet points format)
+### Our Values  (Bullet points format)
 Company Values	
-Trust & Honesty   Our actions match our words. We are trustworthy in all relationships.
-Diversity & Teamwork   We create an open and inclusive environment for everyone to work their best way. Our team values good communication and sharing the same vision for our future. 
-Agility & Innovation   We respond quickly to changes and seize new opportunities. Being creative, open-minded and sharing new ideas freely is key to our success.
-Respect & Dedication   We show consideration for others and treat each other with dignity. We are dedicated to play our part in improving human health and wellbeing. 
+* Trust & Honesty   Our actions match our words. We are trustworthy in all relationships.
+* Diversity & Teamwork   We create an open and inclusive environment for everyone to work their best way. Our team values good communication and sharing the same vision for our future. 
+* Agility & Innovation   We respond quickly to changes and seize new opportunities. Being creative, open-minded and sharing new ideas freely is key to our success.
+* Respect & Dedication   We show consideration for others and treat each other with dignity. We are dedicated to play our part in improving human health and wellbeing. 
 
-Services (Bullet Point)
-Procurement   We seek a wide range of high-quality ingredients in food & pharmaceutical industry.
-Logistics   We work closely with our logistic partner to deliver our products upon your request.
-Customer Service   Our aim is to provide excellent support to our clients.
+### Services (Bullet Point)
+* Procurement   We seek a wide range of high-quality ingredients in food & pharmaceutical industry.
+* Logistics   We work closely with our logistic partner to deliver our products upon your request.
+* Customer Service   Our aim is to provide excellent support to our clients.
 
-News 
-We are looking forward to sharing some exciting news with you. 
-Keep coming back to stay updated
+### News 
+*We are looking forward to sharing some exciting news with you. Keep coming back to stay updated
 
 
 ## Contact 
 
-Contact form: 
+* Contact form: 
 Remains the same, except remove phone number.
 Our address: Lyne Chemicals Limited, Phoenix House, Monahan Road, Cork T12 H1XY Ireland
 Email: enquiry@lynechemicals.com 
 
-Quick Links such as 
+* Quick Links such as 
 Standard terms & Conditions
 About, Privacy, Terms and conditions, Cookies Policy
 
