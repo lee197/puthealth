@@ -32,26 +32,22 @@ Company Values
 * Customer Service   Our aim is to provide excellent support to our clients.
 
 ### News 
-*We are looking forward to sharing some exciting news with you. Keep coming back to stay updated
+* We are looking forward to sharing some exciting news with you. Keep coming back to stay updated
 
 
 ## Contact 
 
-* Contact form: 
-Remains the same, except remove phone number.
+* Contact form: *Remains the same, except remove phone number.*
 Our address: Lyne Chemicals Limited, Phoenix House, Monahan Road, Cork T12 H1XY Ireland
 Email: enquiry@lynechemicals.com 
 
-* Quick Links such as 
-Standard terms & Conditions
-About, Privacy, Terms and conditions, Cookies Policy
-
+* Quick Links such as : Standard terms & Conditions, About, Privacy, Terms and conditions, Cookies Policy
 
 ## Key Points to note:
-Please remove:
-Get started button.
-Change Blog to news
+*Please remove:*
+*Get started button.*
+*Change Blog to news*
 
-Please insert:
-blue and white theme. Remove the green colour.
-Colour code: 300C, 
+*Please insert:*v
+*blue and white theme. Remove the green colour.*
+*Colour code: 300C, *
