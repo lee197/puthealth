@@ -1,6 +1,7 @@
 Tabs to include:
+# Project Title
 
-## Home 
+## Home:
 It can include the company logo and graphics similar to websites listed.
 We want to input images with a tagline or key words in the home page.  
 
