@@ -1,10 +1,10 @@
 Tabs to include:
 
-*Home 
+## Home 
 It can include the company logo and graphics similar to websites listed.
 We want to input images with a tagline or key words in the home page.  
 
-*About （drop down white column）
+## About （drop down white column）
 
  Who are we?
 Lyne Chemicals Limited is a distributor of ingredients for the food and pharmaceutical industry. We introduce a wide range of ingredients to bring high quality finished products to the market. We wish to   enhance human health and wellbeing. Lyne Chemicals was established in 2016 and have built it up with experience over time. We are excited to share our journey with you.......
@@ -30,7 +30,7 @@ We are looking forward to sharing some exciting news with you.
 Keep coming back to stay updated
 
 
-*Contact 
+## Contact 
 
 Contact form: 
 Remains the same, except remove phone number.
@@ -42,7 +42,7 @@ Standard terms & Conditions
 About, Privacy, Terms and conditions, Cookies Policy
 
 
-*Key Points to note:
+## Key Points to note:
 Please remove:
 Get started button.
 Change Blog to news
