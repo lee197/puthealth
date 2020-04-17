@@ -2,6 +2,7 @@
 
 ## Home:
 It can include the company logo and graphics similar to websites listed.
+
 We want to input images with a tagline or key words in the home page.  
 
 ## About （drop down white column）
@@ -21,10 +22,10 @@ We want to input images with a tagline or key words in the home page.
 
 ### Our Values  (Bullet points format)
 Company Values	
-* Trust & Honesty   Our actions match our words. We are trustworthy in all relationships.
-* Diversity & Teamwork   We create an open and inclusive environment for everyone to work their best way. Our team values good communication and sharing the same vision for our future. 
-* Agility & Innovation   We respond quickly to changes and seize new opportunities. Being creative, open-minded and sharing new ideas freely is key to our success.
-* Respect & Dedication   We show consideration for others and treat each other with dignity. We are dedicated to play our part in improving human health and wellbeing. 
+* Trust & Honesty: Our actions match our words. We are trustworthy in all relationships.
+* Diversity & Teamwork: We create an open and inclusive environment for everyone to work their best way. Our team values good communication and sharing the same vision for our future. 
+* Agility & Innovation: We respond quickly to changes and seize new opportunities. Being creative, open-minded and sharing new ideas freely is key to our success.
+* Respect & Dedication: We show consideration for others and treat each other with dignity. We are dedicated to play our part in improving human health and wellbeing. 
 
 ### Services (Bullet Point)
 * Procurement   We seek a wide range of high-quality ingredients in food & pharmaceutical industry.
@@ -38,16 +39,22 @@ Company Values
 ## Contact 
 
 * Contact form: *Remains the same, except remove phone number.*
+
 Our address: Lyne Chemicals Limited, Phoenix House, Monahan Road, Cork T12 H1XY Ireland
+
 Email: enquiry@lynechemicals.com 
 
 * Quick Links such as : Standard terms & Conditions, About, Privacy, Terms and conditions, Cookies Policy
 
 ## Key Points to note:
 *Please remove:*
+
 *Get started button.*
+
 *Change Blog to news*
 
-*Please insert:*v
+*Please insert:*
+
 *blue and white theme. Remove the green colour.*
-*Colour code: 300C, *
+
+*Colour code: 300C*
