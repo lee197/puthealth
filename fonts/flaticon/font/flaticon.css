@@ -23,7 +23,7 @@
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
   speak: none;
   font-style: normal;
@@ -37,11 +37,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-money-bag-with-dollar-symbol:before { content: "\f100"; }
-.flaticon-bar-chart:before { content: "\f101"; }
 .flaticon-line-chart:before { content: "\f102"; }
 .flaticon-box:before { content: "\f103"; }
 .flaticon-open:before { content: "\f104"; }
 .flaticon-settings:before { content: "\f105"; }
 .flaticon-target:before { content: "\f106"; }
-.flaticon-medal:before { content: "\f107"; }
+
+    .flaticon-procurement:before { content: "\f100"; }
+    .flaticon-logistic:before { content: "\f103"; }
+    .flaticon-customer:before { content: "\f107"; }
+    .flaticon-rd:before { content: "\f105"; }
+
