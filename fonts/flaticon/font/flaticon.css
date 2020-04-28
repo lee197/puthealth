@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 31/03/2019 22:35
+  	Creation date: 28/04/2020 19:36
   	*/
 
 @font-face {
@@ -25,26 +25,12 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+        font-size: 65px;
+font-style: normal;
+margin-left: 20px;
 }
 
-.flaticon-line-chart:before { content: "\f102"; }
-.flaticon-box:before { content: "\f103"; }
-.flaticon-open:before { content: "\f104"; }
-.flaticon-settings:before { content: "\f105"; }
-.flaticon-target:before { content: "\f106"; }
-
-    .flaticon-procurement:before { content: "\f100"; }
-    .flaticon-logistic:before { content: "\f103"; }
-    .flaticon-customer:before { content: "\f107"; }
-    .flaticon-rd:before { content: "\f105"; }
-
+.flaticon-money-bag:before { content: "\f100"; }
+.flaticon-box:before { content: "\f101"; }
+.flaticon-medal:before { content: "\f102"; }
+.flaticon-lab:before { content: "\f103"; }
