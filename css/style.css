@@ -1767,3 +1767,57 @@ a:hover {
   border-right: 1px solid grey;
   height: 100%;
 }
+
+.divBottomNav {
+  clear: both;
+  height: 71px;
+  position: relative;
+  width: 1004px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+
+.bottomNav {
+  margin-bottom: 20px;
+  /*margin-right: auto;*/
+  text-align: left;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 10px;
+  color: #7a7a7a;
+  text-decoration: none;
+}
+
+.bottomNavLinks {
+  padding-top: 10px;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+.bottomNav td {
+  color:grey;
+}
+
+.bottomNav a {
+  text-align: left;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  color: grey;
+  text-decoration: none;
+}
+
+.bottomNavDivider {
+  height: 10px;
+  width: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.bottomNav td {
+  color: grey;
+}

@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <div class="site-wrap">
+  <footer class="site-wrap">
 
 
 
@@ -290,33 +290,33 @@
         </div>
         <div class="row">
           <div class="col-md-12 col-lg-8 mb-5">
-            <form action="#" class="p-5 bg-white">
+            <form action="https://formspree.io/xzbjpwea" method="POST" class="p-5 bg-white">
 
               <div class="row form-group">
               <div class="col-md-12 mb-3 mb-md-0">
-                <label class="font-weight-bold" for="firstname">First Name</label>
-                <input type="text" id="firstname" class="form-control" placeholder="First Name">
+                <label class="font-weight-bold" for="name">First Name</label>
+                <input type="text" name="first name" id="name" class="form-control" placeholder="First Name">
               </div>
             </div>
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="font-weight-bold" for="lastname">Last Name</label>
-                  <input type="text" id="lastname" class="form-control" placeholder="Last Name">
+                  <input type="text" name="last name" id="lastname" class="form-control" placeholder="Last Name">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="font-weight-bold" for="firstname">Company Name</label>
-                  <input type="text" id="companyname" class="form-control" placeholder="Company Name">
+                  <label class="font-weight-bold" for="companyname">Company Name</label>
+                  <input type="text" name="company name" id="companyname" class="form-control" placeholder="Company Name">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="font-weight-bold" for="email">Email</label>
-                  <input type="email" id="email" class="form-control" placeholder="Email Address">
+                  <input type="email" name="email_replyto" id="email" class="form-control" placeholder="Email Address">
                 </div>
               </div>
 
@@ -324,14 +324,14 @@
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="font-weight-bold" for="phone">Phone</label>
-                  <input type="text" id="phone" class="form-control" placeholder="Phone">
+                  <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="font-weight-bold" for="address">Address</label>
-                  <input type="text" id="address" class="form-control" placeholder="Address">
+                  <input type="text" name="address" id="address" class="form-control" placeholder="Address">
                 </div>
               </div>
 
@@ -347,7 +347,7 @@
                   <input type="submit" value="Send Message" class="btn btn-primary text-white px-4 py-2">
                 </div>
               </div>
-
+              <input type="hidden" name="_next" value="https://www.google.com/"/>
 
             </form>
           </div>
@@ -355,13 +355,7 @@
           <div class="col-lg-4" >
             <div class="p-4 mb-3 bg-white">
               <h3 class="h5 text-black mb-3">Contact Info</h3>
-<!--              <p class="mb-0 font-weight-bold">Address</p>-->
-              <p class="mb-4">A: Lyne Chemicals Limited, Phoenix House, Monahan Road, Cork T12 H1XY Ireland</p>
-
-<!--              <p class="mb-0 font-weight-bold">Phone</p>-->
-<!--              <p class="mb-4"><a href="#">+1 232 3235 324</a></p>-->
-
-<!--              <p class="mb-0 font-weight-bold">Email Address</p>-->
+              <p class="mb-4">Lyne Chemicals Limited, Phoenix House, Monahan Road, Cork T12 H1XY Ireland</p>
               <p class="mb-0">E: enquiry@lynechemicals.com</a></p>
 
             </div>
@@ -374,65 +368,41 @@
     <footer class="container-fluid bg-grey py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-6 ">
-                <div class="logo-part">
-                  <img src="images/logo-small.jpg" class="w-50 logo-footer" >
-                  <p>Lyne Chemicals Limited</p>
-                  <p>Lyne Chemicals Limited, Phoenix House, Monahan Road, Cork T12 H1XY Ireland</p>
-                </div>
+
+              <div class=" col-xs-6 divBottomNav ms-dialogHidden" id="trBottomNav">
+
+                <table border="0" cellspacing="0" cellpadding="0" class="bottomNav bottomNavLinks">
+                  <tbody>
+                  <tr style="width:100%; height:20px;">
+                    <td align="center" valign="middle"><a href="https://www.eastman.com/Pages/Legal_Information.aspx">Legal</a><span class="bottomNavDivider">|</span></td>
+                    <td align="center" valign="middle"><a href="https://www.eastman.com/privacy/Pages/Overview.aspx">Privacy</a><span class="bottomNavDivider">|</span></td>
+                    <td align="center" valign="middle"><a href="https://www.eastman.com/Products/Pages/SDS_Finder.aspx">SDS Finder</a><span class="bottomNavDivider">|</span></td>
+                    <td align="center" valign="middle"><a href="https://www.eastman.com/Company/investors/Corporate_Governance/Documents/EMN_Stmt_on_Slavery_and_Human_Trafficking_March_2016.pdf" target="_blank">Supply Chain Responsibility</a><span class="bottomNavDivider">|</span></td>
+                    <td align="center" valign="middle"><a href="https://www.eastman.com/Pages/Site_Index.aspx">Site Index</a><span class="bottomNavDivider">|</span></td>
+                    <td align="center" valign="middle"><a href="https://www.eastman.com/Pages/Contact_Us.aspx">Contact Us</a></td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <table border="0" cellspacing="0" width="800px" cellpadding="0" class="bottomNav">
+                  <tbody>
+                  <tr>
+                    <td align="left" valign="middle" width="210px">© 2020 Lyne Chemicals LTD. or its subsidiaries. All rights reserved.</td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle" width="210px">As used herein, ®  denotes registered trademark status in the Ireland only.</td>
+                  </tr>
+                  </tbody>
+                </table>
+
+<!--                  <div class=" col-xs-6"><h3 class="text-white">Exploring new ideas for better health</h3></div>-->
+
               </div>
-              <div class="col-md-6 px-4">
-                <h6> About Company</h6>
-                <p>A distributor of ingredients for the food and pharmaceutical industry.</p>
-                <a href="#about" class="btn-footer"> More Info </a><br>
-                <a href="#contact" class="btn-footer"> Contact Us</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-6 px-4">
-                <h6> Help us</h6>
-                <div class="row ">
-
-                  <div class="col-md-6 px-4">
-                    <ul>
-                      <li> <a href="#"> Standard terms & Conditions</a> </li>
-                      <li> <a href="#"> Privacy</a> </li>
-                      <li> <a href="#"> Terms and conditions</a> </li>
-                      <li> <a href="#"> Cookies Policy</a> </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-
-
-<!--                  <div class="row">-->
-<!--                    <div class="col-md-12"><h3 class="footer-heading mb-4 text-white">Social Icons</h3></div>-->
-<!--                    <div>-->
-<!--                      <p>-->
-<!--                        <a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook" style="font-size:24px; margin-right: 15px"></span></a>-->
-<!--                        <a href="#about"><span class="icon-twitter" style="font-size:24px; margin-right: 15px"></span></a>-->
-<!--                        <a href="#"><span class="icon-instagram" style="font-size:24px; margin-right: 15px"></span></a>-->
-<!--                        <a href="#"><span class="icon-vimeo" style="font-size:24px"></span></a>-->
-
-<!--                      </p>-->
-<!--                    </div>-->
-<!--                  </div>-->
-
-<!--                <form class="form-footer my-3">-->
-<!--                  <input type="text"  placeholder="search here...." name="search">-->
-<!--                  <input type="button" value="Go" >-->
-<!--                </form>-->
-<!--                <p>That's technology limitation of LCD monitors</p>-->
               </div>
             </div>
           </div>
         </div>
-      </div>
+  </footer>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
