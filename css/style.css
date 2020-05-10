@@ -1821,3 +1821,44 @@ table {
 .bottomNav td {
   color: grey;
 }
+
+.main_page_ice {
+  margin-left: 40px;
+  margin-top: 40%
+}
+@media (max-width: 768px) {
+  .main_page_ice {
+    margin-left: 40px;
+    margin-top: 70%
+  }
+}
+
+.main_page_black {
+  margin-left: 20px;
+  margin-top: 40%;
+}
+@media (max-width: 768px) {
+  .main_page_black {
+    margin-left: 20px;
+    margin-top: 70%;
+  }
+}
+
+.logo_lyne {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  height: 80px;
+  width: 150px;
+}
+@media (max-width: 768px) {
+  .logo_lyne {
+    margin-left: 20px;
+    margin-bottom: 50px;
+
+    height: 0px;
+    width: 120px;
+  }
+}
+
