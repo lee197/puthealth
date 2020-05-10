@@ -10,9 +10,9 @@ jQuery(document).ready(function($) {
 
 	$(window).load(function() {
 		$(".loader").delay(1000).fadeOut("slow");
-  	$("#overlayer").delay(1000).fadeOut("slow");		
+  	$("#overlayer").delay(1000).fadeOut("slow");
 	});
-	
+
 
 	var siteMenuClone = function() {
 
@@ -23,11 +23,11 @@ jQuery(document).ready(function($) {
 
 
 		setTimeout(function() {
-			
+
 			var counter = 0;
       $('.site-mobile-menu .has-children').each(function(){
         var $this = $(this);
-        
+
         $this.prepend('<span class="arrow-collapse collapsed">');
 
         $this.find('.arrow-collapse').attr({
@@ -53,8 +53,8 @@ jQuery(document).ready(function($) {
       } else {
         $this.addClass('active');
       }
-      e.preventDefault();  
-      
+      e.preventDefault();
+
     });
 
 		$(window).resize(function() {
@@ -79,7 +79,7 @@ jQuery(document).ready(function($) {
 				$('body').addClass('offcanvas-menu');
 				$this.addClass('active');
 			}
-		}) 
+		})
 
 		// click outisde offcanvas
 		$(document).mouseup(function(e) {
@@ -90,7 +90,7 @@ jQuery(document).ready(function($) {
 				}
 	    }
 		});
-	}; 
+	};
 	siteMenuClone();
 
 
@@ -169,7 +169,7 @@ jQuery(document).ready(function($) {
 	        	stagePadding: 0,
 	          items: 1
 	        }
-	        
+
 		    }
 			});
 		}
@@ -255,7 +255,7 @@ jQuery(document).ready(function($) {
 			    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
 			});
 		}
-				
+
 	};
 	siteCountDown();
 
@@ -281,7 +281,7 @@ jQuery(document).ready(function($) {
 			} else {
 				navbar.removeClass('scrolled');
 			}
-			
+
 		})
 
 	}
@@ -292,9 +292,8 @@ jQuery(document).ready(function($) {
 	};
 	toolTipInit();
 
-
 	var counter = function() {
-		
+
 		$('.section-counter').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
@@ -311,7 +310,7 @@ jQuery(document).ready(function($) {
 					  }, 7000
 					);
 				});
-				
+
 			}
 
 		} , { offset: '95%' } );
