@@ -1861,4 +1861,7 @@ table {
     width: 120px;
   }
 }
+a:hover {
+  color: red;
+}
 
