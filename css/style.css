@@ -247,7 +247,11 @@ a {
         text-decoration: none !important; }
     .site-navbar .site-navigation .site-menu li a:hover {
           color: #005a9f !important;}
-
+@media (max-width: 768px) {
+  .site-navbar .site-navigation .site-menu > li > a {
+    display: none;
+  }
+}
 .site-mobile-menu {
   width: 300px;
   position: fixed;
@@ -1770,8 +1774,9 @@ table {
   }
 }
 
+
 .sendbtn:hover {
-    background-color: grey !important;
+  background-color: grey !important;
 }
 
 .contact_link {
