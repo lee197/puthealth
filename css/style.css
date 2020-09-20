@@ -1559,7 +1559,7 @@ a:hover {
 }
 
 .quick-contact-info {
-    background: #5c7893;
+    background: #239b3a;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -2129,7 +2129,7 @@ ul, ol {
 .nav-list li a:before {
     content: "\f14f";
     font: 400 21px/1 "Material Design Icons";
-    color: #4d6de6;
+    color: #239b3a;
     display: inline-block;
     vertical-align: baseline;
     margin-left: -28px;
