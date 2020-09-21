@@ -1,13 +1,15 @@
 $(".language-cn").on("click", function () {
     // 替换 button 的 content
     $('#btnGroupDrop1').html("🇨🇳 中文");
-    getlanguageJson("./language/cn.json", translatePages);
+    getlanguageJson("./language/index_cn.json", translateIndexPages);
+    getlanguageJson("./language/products_cn.json", translateProductsPages);
 });
 
 $(".language-en").on("click", function () {
     // 替换 button 的 content
     $('#btnGroupDrop1').html("🇬🇧 Enlish");
-    getlanguageJson("./language/en.json", translatePages);
+    getlanguageJson("./language/index_en.json", translateIndexPages);
+    getlanguageJson("./language/products_en.json", translateProductsPages);
 
 });
 
@@ -19,15 +21,13 @@ function getlanguageJson (url, translatePages) {
         dataType: "json",
         async: false,
         success: function (data) {
-            translatePages(data)
+            translatePages(data);
         }
     })
 }
 
-function translatePages (data) {
+function translateIndexPages (data) {
     if (data) {
-        console.log(' data ', data['banner']);
-
         // #### nav
         $(".site-menu li a").each(function (index) {
             $(this).text(data.nav[index])
@@ -81,8 +81,18 @@ function translatePages (data) {
         $("#contact .contact-addressinfor p").each(function (index) {
             $(this).text(data.connect.adress.content[index])
         });
+    } else {
+        console.error('error;', "index翻译配置文件未获取到...")
     }
 
 
 
+}
+
+function translateProductsPages (data) {
+    if (data) {
+
+    } else {
+        console.error('error;', "products翻译配置文件未获取到...")
+    }
 }
