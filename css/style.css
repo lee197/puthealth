@@ -315,6 +315,10 @@ a:hover {
     color: #000;
 }
 
+.site-navbar .container{
+    display: flex;
+    justify-content: flex-end;
+}
 .site-navbar .site-navigation .site-menu {
     margin-bottom: 0;
 }
