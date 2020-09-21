@@ -28,24 +28,24 @@ function translatePages (data) {
     if (data) {
         console.log(' data ', data['banner']);
 
-        // nav
+        // #### nav
         $(".site-menu li a").each(function (index) {
             $(this).text(data.nav[index])
         });
 
-        // banner 4个
+        // #### banner 4个
         for (let i = 0; i < 4; i++) {
             $(".puthealthbanner" + (i + 1) + " h2").text(data.banner[i]);
         }
 
-        // about 
+        // #### about 
         $("#about .title span").text(data.about.title[0]);
         $("#about .title h2").text(data.about.title[1]);
         $("#about p").each(function (index) {
             $(this).text(data.about.content[index])
         });
 
-        // products
+        // #### products
         $("#product .title span").text(data.products.title[0]);
         $("#product .title h2").text(data.products.title[1]);
         // 3个产品
@@ -54,7 +54,7 @@ function translatePages (data) {
             $("#product .media-image-body" + (i + 1) + " p").text(data.products["product-" + (i + 1)].content);
         }
 
-        // news
+        // #### news
         $("#knowledge #service span").text(data.news.title[0]);
         $("#knowledge #service h2").text(data.news.title[1]);
         // latast
@@ -68,21 +68,19 @@ function translatePages (data) {
             $("#knowledge .entry-summary .qhd-content p").text(data.news.list[i][3]);
         }
 
-        // contact
+        // #### contact
         $("#contact .title h2").text(data.connect.title[0]);
-        // for (let i = 0; i < 6; i++) {
-        //     $("#contact .from" + (i + 1) + " .font-weight-bold").text(data.connect.form[i][0]);
-        //     $("#contact .from" + (i + 1) + " .form-control").attr("placeholder", data.connect.form[i][1]);
-        // }
-        // $("#contact .from1 .contact-label").html(data.connect.form[0][0]);
-        // $("#contact .from1 .form-control").attr("placeholder", data.connect.form[0][1]);
-
+        for (let i = 0; i < 6; i++) {
+            $("#contact .form" + (i + 1) + " .contact-label").html(data.connect.form[i][0]);
+            $("#contact .form" + (i + 1) + " .form-control").attr("placeholder", data.connect.form[i][1]);
+        }
+        // subumit
         $("#contact .contact-subumit").val(data.connect.subumit);
-        // $("#contact .contact-infor h3").text("hhh");
-        // $("#contact .contact-infor p").each(function (index) {
-        //     console.log('object', index)
-        //     // $(this).text(data.connect.adress.content[index])
-        // });
+        // address
+        $("#contact .contact-addressinfor h3").text(data.connect.adress.title);
+        $("#contact .contact-addressinfor p").each(function (index) {
+            $(this).text(data.connect.adress.content[index])
+        });
     }
 
 
