@@ -1,78 +1,78 @@
- AOS.init({
- 	duration: 800,
- 	easing: 'slide',
- 	once: false
- });
+AOS.init({
+	duration: 800,
+	easing: 'slide',
+	once: false
+});
 
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
 
 	"use strict";
 
-	$(window).load(function() {
+	$(window).load(function () {
 		$(".loader").delay(1000).fadeOut("slow");
-  	$("#overlayer").delay(1000).fadeOut("slow");
+		$("#overlayer").delay(1000).fadeOut("slow");
 	});
 
 
-	var siteMenuClone = function() {
+	var siteMenuClone = function () {
 
-		$('.js-clone-nav').each(function() {
+		$('.js-clone-nav').each(function () {
 			var $this = $(this);
 			$this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
 		});
 
 
-		setTimeout(function() {
+		setTimeout(function () {
 
 			var counter = 0;
-      $('.site-mobile-menu .has-children').each(function(){
-        var $this = $(this);
+			$('.site-mobile-menu .has-children').each(function () {
+				var $this = $(this);
 
-        $this.prepend('<span class="arrow-collapse collapsed">');
+				$this.prepend('<span class="arrow-collapse collapsed">');
 
-        $this.find('.arrow-collapse').attr({
-          'data-toggle' : 'collapse',
-          'data-target' : '#collapseItem' + counter,
-        });
+				$this.find('.arrow-collapse').attr({
+					'data-toggle': 'collapse',
+					'data-target': '#collapseItem' + counter,
+				});
 
-        $this.find('> ul').attr({
-          'class' : 'collapse',
-          'id' : 'collapseItem' + counter,
-        });
+				$this.find('> ul').attr({
+					'class': 'collapse',
+					'id': 'collapseItem' + counter,
+				});
 
-        counter++;
+				counter++;
 
-      });
+			});
 
-    }, 1000);
+		}, 1000);
 
-		$('body').on('click', '.arrow-collapse', function(e) {
-      var $this = $(this);
-      if ( $this.closest('li').find('.collapse').hasClass('show') ) {
-        $this.removeClass('active');
-      } else {
-        $this.addClass('active');
-      }
-      e.preventDefault();
+		$('body').on('click', '.arrow-collapse', function (e) {
+			var $this = $(this);
+			if ($this.closest('li').find('.collapse').hasClass('show')) {
+				$this.removeClass('active');
+			} else {
+				$this.addClass('active');
+			}
+			e.preventDefault();
 
-    });
+		});
 
-		$(window).resize(function() {
+		$(window).resize(function () {
 			var $this = $(this),
 				w = $this.width();
 
-			if ( w > 768 ) {
-				if ( $('body').hasClass('offcanvas-menu') ) {
+			if (w > 768) {
+				if ($('body').hasClass('offcanvas-menu')) {
 					$('body').removeClass('offcanvas-menu');
 				}
 			}
 		})
 
-		$('body').on('click', '.js-menu-toggle', function(e) {
+		$('body').on('click', '.js-menu-toggle', function (e) {
 			var $this = $(this);
 			e.preventDefault();
 
-			if ( $('body').hasClass('offcanvas-menu') ) {
+			if ($('body').hasClass('offcanvas-menu')) {
 				$('body').removeClass('offcanvas-menu');
 				$this.removeClass('active');
 			} else {
@@ -82,28 +82,28 @@ jQuery(document).ready(function($) {
 		})
 
 		// click outisde offcanvas
-		$(document).mouseup(function(e) {
-	    var container = $(".site-mobile-menu");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	      if ( $('body').hasClass('offcanvas-menu') ) {
+		$(document).mouseup(function (e) {
+			var container = $(".site-mobile-menu");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+				if ($('body').hasClass('offcanvas-menu')) {
 					$('body').removeClass('offcanvas-menu');
 				}
-	    }
+			}
 		});
 	};
 	siteMenuClone();
 
 
-	var sitePlusMinus = function() {
-		$('.js-btn-minus').on('click', function(e){
+	var sitePlusMinus = function () {
+		$('.js-btn-minus').on('click', function (e) {
 			e.preventDefault();
-			if ( $(this).closest('.input-group').find('.form-control').val() != 0  ) {
+			if ($(this).closest('.input-group').find('.form-control').val() != 0) {
 				$(this).closest('.input-group').find('.form-control').val(parseInt($(this).closest('.input-group').find('.form-control').val()) - 1);
 			} else {
 				$(this).closest('.input-group').find('.form-control').val(parseInt(0));
 			}
 		});
-		$('.js-btn-plus').on('click', function(e){
+		$('.js-btn-plus').on('click', function (e) {
 			e.preventDefault();
 			$(this).closest('.input-group').find('.form-control').val(parseInt($(this).closest('.input-group').find('.form-control').val()) + 1);
 		});
@@ -112,156 +112,156 @@ jQuery(document).ready(function($) {
 
 
 	var siteCarousel = function () {
-		if ( $('.nonloop-block-13').length > 0 ) {
+		if ($('.nonloop-block-13').length > 0) {
 			$('.nonloop-block-13').owlCarousel({
-		    center: false,
-		    items: 1,
-		    loop: true,
+				center: false,
+				items: 1,
+				loop: true,
 				stagePadding: 10,
 				autoplay: true,
-		    margin: 20,
-		    nav: true,
-		    smartSpeed: 1000,
-		    dots: true,
+				margin: 20,
+				nav: true,
+				smartSpeed: 1000,
+				dots: true,
 				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
-		    responsive:{
-	        600:{
-	        	margin: 20,
-	        	stagePadding: 10,
-	          items: 1
-	        },
-	        1000:{
-	        	margin: 20,
-	        	stagePadding: 10,
-	          items: 2
-	        },
-	        1200:{
-	        	margin: 20,
-	        	stagePadding: 10,
-	          items: 3
-	        }
-		    }
+				responsive: {
+					600: {
+						margin: 20,
+						stagePadding: 10,
+						items: 1
+					},
+					1000: {
+						margin: 20,
+						stagePadding: 10,
+						items: 2
+					},
+					1200: {
+						margin: 20,
+						stagePadding: 10,
+						items: 3
+					}
+				}
 			});
 		}
 
 
 
-		if ( $('.nonloop-block-14').length > 0 ) {
+		if ($('.nonloop-block-14').length > 0) {
 			$('.nonloop-block-14').owlCarousel({
-		    center: false,
-		    items: 1,
-		    loop: true,
+				center: false,
+				items: 1,
+				loop: true,
 				stagePadding: 0,
 				autoplay: true,
-		    margin: 20,
-		    smartSpeed: 900,
-		    nav: true,
-		    dots: true,
+				margin: 20,
+				smartSpeed: 900,
+				nav: true,
+				dots: true,
 				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
-		    responsive:{
-	        600:{
-	        	margin: 20,
-	        	stagePadding: 0,
-	          items: 1
-	        },
-	        1000:{
-	        	margin: 20,
-	        	stagePadding: 0,
-	          items: 1
-	        }
+				responsive: {
+					600: {
+						margin: 20,
+						stagePadding: 0,
+						items: 1
+					},
+					1000: {
+						margin: 20,
+						stagePadding: 0,
+						items: 1
+					}
 
-		    }
+				}
 			});
 		}
 
-		if ( $('.nonloop-block-15').length > 0 ) {
+		if ($('.nonloop-block-15').length > 0) {
 			$('.nonloop-block-15').owlCarousel({
-		    center: false,
-		    items: 1,
-		    loop: true,
+				center: false,
+				items: 1,
+				loop: true,
 				stagePadding: 0,
 				autoplay: true,
-		    margin: 20,
+				margin: 20,
 
-		    nav: true,
-		    dots: true,
+				nav: true,
+				dots: true,
 				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
-		    responsive:{
-	        600:{
-	        	margin: 20,
-	        	stagePadding: 0,
-	          items: 1,
-	          nav: false,
-		    		dots: true
-	        },
-	        1000:{
-	        	margin: 20,
-	        	stagePadding: 0,
-	          items: 2,
-	          nav: true,
-		    		dots: true
-	        },
-	        1200:{
-	        	margin: 20,
-	        	stagePadding: 0,
-	          items: 3,
-	          nav: true,
-		    		dots: true
-	        }
-		    }
+				responsive: {
+					600: {
+						margin: 20,
+						stagePadding: 0,
+						items: 1,
+						nav: false,
+						dots: true
+					},
+					1000: {
+						margin: 20,
+						stagePadding: 0,
+						items: 2,
+						nav: true,
+						dots: true
+					},
+					1200: {
+						margin: 20,
+						stagePadding: 0,
+						items: 3,
+						nav: true,
+						dots: true
+					}
+				}
 			});
 		}
 
-		if ( $('.slide-one-item').length > 0 ) {
+		if ($('.slide-one-item').length > 0) {
 			$('.slide-one-item').owlCarousel({
-		    center: false,
-		    items: 1,
-		    loop: true,
+				center: false,
+				items: 1,
+				loop: true,
 				stagePadding: 0,
 				smartSpeed: 1000,
-		    margin: 0,
-		    autoplay: true,
-		    pauseOnHover: false,
-		    animateOut: 'fadeOut',
-    		animateIn: 'fadeIn',
-		    nav: true,
-		    navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">']
-		  });
-	  }
+				margin: 0,
+				autoplay: true,
+				pauseOnHover: false,
+				animateOut: 'fadeOut',
+				animateIn: 'fadeIn',
+				nav: true,
+				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">']
+			});
+		}
 	};
 	siteCarousel();
 
-	var siteStellar = function() {
+	var siteStellar = function () {
 		$(window).stellar({
-	    responsive: false,
-	    parallaxBackgrounds: true,
-	    parallaxElements: true,
-	    horizontalScrolling: false,
-	    hideDistantElements: false,
-	    scrollProperty: 'scroll'
-	  });
+			responsive: false,
+			parallaxBackgrounds: true,
+			parallaxElements: true,
+			horizontalScrolling: false,
+			hideDistantElements: false,
+			scrollProperty: 'scroll'
+		});
 	};
 	siteStellar();
 
-	var siteCountDown = function() {
+	var siteCountDown = function () {
 
-		if ( $('#date-countdown').length > 0 ) {
-			$('#date-countdown').countdown('2020/10/10', function(event) {
-			  var $this = $(this).html(event.strftime(''
-			    + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
-			    + '<span class="countdown-block"><span class="label">%d</span> days </span>'
-			    + '<span class="countdown-block"><span class="label">%H</span> hr </span>'
-			    + '<span class="countdown-block"><span class="label">%M</span> min </span>'
-			    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
+		if ($('#date-countdown').length > 0) {
+			$('#date-countdown').countdown('2020/10/10', function (event) {
+				var $this = $(this).html(event.strftime(''
+					+ '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
+					+ '<span class="countdown-block"><span class="label">%d</span> days </span>'
+					+ '<span class="countdown-block"><span class="label">%H</span> hr </span>'
+					+ '<span class="countdown-block"><span class="label">%M</span> min </span>'
+					+ '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
 			});
 		}
 
 	};
 	siteCountDown();
 
-	var siteDatePicker = function() {
+	var siteDatePicker = function () {
 
-		if ( $('.datepicker').length > 0 ) {
+		if ($('.datepicker').length > 0) {
 			$('.datepicker').datepicker();
 		}
 
@@ -269,14 +269,14 @@ jQuery(document).ready(function($) {
 	siteDatePicker();
 
 
-	var windowScrolled = function() {
+	var windowScrolled = function () {
 
 
-		$(window).scroll(function() {
+		$(window).scroll(function () {
 
-			var $w = $(this), st = $w.scrollTop(), navbar = $('.js-site-navbar') ;
+			var $w = $(this), st = $w.scrollTop(), navbar = $('.js-site-navbar');
 
-			if ( st > 100 ) {
+			if (st > 100) {
 				navbar.addClass('scrolled');
 			} else {
 				navbar.removeClass('scrolled');
@@ -287,35 +287,43 @@ jQuery(document).ready(function($) {
 	}
 	windowScrolled();
 
-	var toolTipInit = function() {
+	var toolTipInit = function () {
 		$('[data-toggle="tooltip"]').tooltip()
 	};
 	toolTipInit();
 
-	var counter = function() {
+	var counter = function () {
 
-		$('.section-counter').waypoint( function( direction ) {
+		$('.section-counter').waypoint(function (direction) {
 
-			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
+			if (direction === 'down' && !$(this.element).hasClass('ftco-animated')) {
 
 				var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-				$('.number').each(function(){
+				$('.number').each(function () {
 					var $this = $(this),
 						num = $this.data('number');
-						console.log(num);
+					console.log(num);
 					$this.animateNumber(
-					  {
-					    number: num,
-					    numberStep: comma_separator_number_step
-					  }, 7000
+						{
+							number: num,
+							numberStep: comma_separator_number_step
+						}, 7000
 					);
 				});
 
 			}
 
-		} , { offset: '95%' } );
+		}, { offset: '95%' });
 
 	}
 	counter();
+
+	/*****************By Vicky *******************/
+	var productSwiper = new Swiper('.swiper-container', {
+		autoplay: true,//可选选项，自动滑动                 
+		speed: 1000,                    // 切换速度
+		needPrevAndNextBtnGroup: true, // 是否需要前进后退按钮组
+		needPagination: true           //     // 是否需要分页器
+	})
 
 });
