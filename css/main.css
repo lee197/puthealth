@@ -8,8 +8,19 @@
     }
 }
 
-.products-box{
+.product-box{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top:86px;
+}
+.swiper-container{
+    flex-grow:1;
+
+}
+
+.product-instructions{
+    padding-left: 20px;
+    flex-grow:1;
+
 }

@@ -320,7 +320,7 @@ jQuery(document).ready(function ($) {
 
 	/*****************By Vicky *******************/
 	var productSwiper = new Swiper('.swiper-container', {
-		autoplay: true,//可选选项，自动滑动                 
+		autoplay: false,//可选选项，自动滑动                 
 		speed: 1000,                    // 切换速度
 		needPrevAndNextBtnGroup: true, // 是否需要前进后退按钮组
 		needPagination: true           //     // 是否需要分页器

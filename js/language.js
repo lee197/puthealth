@@ -1,18 +1,32 @@
+let language = window.localStorage.getItem("language");
+if (language && language === "en") {
+    enSelect();
+} else {
+    cnSelect();
+}
+
+
 $(".language-cn").on("click", function () {
-    // 替换 button 的 content
-    $('#btnGroupDrop1').html("🇨🇳 中文");
-    getlanguageJson("./language/index_cn.json", translateIndexPages);
-    getlanguageJson("./language/products_cn.json", translateProductsPages);
+    cnSelect();
 });
 
 $(".language-en").on("click", function () {
-    // 替换 button 的 content
+    enSelect();
+});
+
+
+function cnSelect () {
+    $('#btnGroupDrop1').html("🇨🇳 中文");
+    getlanguageJson("./language/index_cn.json", translateIndexPages);
+    getlanguageJson("./language/products_cn.json", translateProductsPages);
+    window.localStorage.setItem("language", "cn");
+}
+function enSelect () {
     $('#btnGroupDrop1').html("🇬🇧 Enlish");
     getlanguageJson("./language/index_en.json", translateIndexPages);
     getlanguageJson("./language/products_en.json", translateProductsPages);
-
-});
-
+    window.localStorage.setItem("language", "en")
+}
 
 function getlanguageJson (url, translatePages) {
     $.ajax({
@@ -38,6 +52,7 @@ function translateIndexPages (data) {
             if (i !== 1) {
                 $(".puthealthbanner" + (i + 1) + " h2").text(data.banner[i]);
             } else {
+                // 特殊处理的banner
                 $(".puthealthbanner2 .puthealthbanner2-box").each(function (index) {
                     $(this).css("writing-mode", data.banner[1][4]);
                 });
@@ -101,7 +116,22 @@ function translateIndexPages (data) {
 
 function translateProductsPages (data) {
     if (data) {
-
+        // banner 
+        $(".product-banner h1").text(data.banner.title);
+        $(".product-banner span").text(data.banner.vender);
+        // 产品简介
+        $(".chapter").text(data.chapter);
+        $(".chapter-character li").each(function (index) {
+            $(this).text(data["chapter-character"][index])
+        })
+        $(".chapter-desc p").each(function (index) {
+            $(this).text(data["chapter-desc"][index])
+        })
+        // 使用说明
+        $(".product-instructions p").each(function (index) {
+            console.log('object', $(".product-instructions p"))
+            $(this).text(data["product-instructions"][index])
+        })
     } else {
         console.error('error;', "products翻译配置文件未获取到...")
     }
