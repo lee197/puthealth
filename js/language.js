@@ -38,7 +38,13 @@ function translateIndexPages (data) {
             if (i !== 1) {
                 $(".puthealthbanner" + (i + 1) + " h2").text(data.banner[i]);
             } else {
-                // $(".puthealthbanner h2 span").text(data.banner[i]);
+                $(".puthealthbanner2 .puthealthbanner2-box").each(function (index) {
+                    $(this).css("writing-mode", data.banner[1][4]);
+                });
+                for (let j = 0; j < 4; j++) {
+                    $(".puthealthbanner2 .desc" + (j + 1)).text(data.banner[1][j]);
+                }
+
             }
         }
 

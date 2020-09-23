@@ -2307,11 +2307,26 @@ table {
 
 .main_page_ice {
     margin-left: 40px;
-    margin-top: 50%
+    margin-top: 40%
 }
 .main_page_ice>h2{
     background-color: rgba(221,221,221,0.5);
     padding: 12px 14px;
+}
+.main_page_nutrition {
+    margin-left: 40px;
+    margin-top: 50%
+}
+.main_page_nutrition>h2{
+    background-color: rgba(221,221,221,0.5);
+    padding: 12px 14px;
+}
+.puthealthbanner2-box{
+    writing-mode:vertical-lr;
+}
+.puthealthbanner2-desc{
+    margin-right: 8px;
+    display: inline-block;
 }
 @media (max-width: 768px) {
     .main_page_ice {
