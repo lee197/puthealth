@@ -2307,9 +2307,12 @@ table {
 
 .main_page_ice {
     margin-left: 40px;
-    margin-top: 10%
+    margin-top: 50%
 }
-
+.main_page_ice>h2{
+    background-color: rgba(221,221,221,0.5);
+    padding: 12px 14px;
+}
 @media (max-width: 768px) {
     .main_page_ice {
         margin-left: 40px;

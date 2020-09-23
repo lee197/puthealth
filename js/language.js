@@ -35,7 +35,11 @@ function translateIndexPages (data) {
 
         // #### banner 4个
         for (let i = 0; i < 4; i++) {
-            $(".puthealthbanner" + (i + 1) + " h2").text(data.banner[i]);
+            if (i !== 1) {
+                $(".puthealthbanner" + (i + 1) + " h2").text(data.banner[i]);
+            } else {
+                // $(".puthealthbanner h2 span").text(data.banner[i]);
+            }
         }
 
         // #### about 
