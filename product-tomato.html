@@ -65,10 +65,10 @@
                             <div class="container">
                                 <ul class="site-menu">
                                     <li class="active"><a href="index.html">首页</a></li>
-                                    <li><a href="#about">关于我们</a></li>
-                                    <li><a href="#product">产品简介</a></li>
-                                    <li><a href="#knowledge">知识论坛</a></li>
-                                    <li><a href="#contact">联系我们</a></li>
+                                    <li><a href="index.html">关于我们</a></li>
+                                    <li><a href="index.html">产品简介</a></li>
+                                    <li><a href="index.html">知识论坛</a></li>
+                                    <li><a href="index.html">联系我们</a></li>
                                 </ul>
                                 <button id="btnGroupDrop1" type="button" class="btn btn-light btn-sm dropdown-toggle"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -265,7 +265,14 @@
 
     <script src="js/main.js"></script>
     <script src="js/language.js"></script>
+    <script>
+        if (language && language === "en") {
+            getlanguageJson("./language/products_tomato_en.json", translateProductsPages);
 
+        } else {
+            getlanguageJson("./language/products_tomato_cn.json", translateProductsPages);
+        }
+    </script>
 
 </body>
 

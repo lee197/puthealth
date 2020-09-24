@@ -1,4 +1,4 @@
-let language = window.localStorage.getItem("language");
+var language = window.localStorage.getItem("language");
 if (language && language === "en") {
     enSelect();
 } else {
@@ -18,15 +18,11 @@ $(".language-en").on("click", function () {
 function cnSelect () {
     $('#btnGroupDrop1').html("🇨🇳 中文");
     getlanguageJson("./language/index_cn.json", translateIndexPages);
-    getlanguageJson("./language/products_tomato_cn.json", translateProductsPages);
-    getlanguageJson("./language/products_suger_cn.json", translateProductsPages);
     window.localStorage.setItem("language", "cn");
 }
 function enSelect () {
     $('#btnGroupDrop1').html("🇬🇧 Enlish");
     getlanguageJson("./language/index_en.json", translateIndexPages);
-    getlanguageJson("./language/products_tomato_en.json", translateProductsPages);
-    getlanguageJson("./language/products_suger_en.json", translateProductsPages);
     window.localStorage.setItem("language", "en")
 }
 
