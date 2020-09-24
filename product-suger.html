@@ -18,7 +18,6 @@
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.css"> -->
 
 
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
@@ -31,8 +30,8 @@
 </head>
 
 <body>
-<div id="overlayer"></div>
-<!-- 	<div class="loader">
+	<div id="overlayer"></div>
+	<!-- 	<div class="loader">
 		<div class="spinner-border text-primary" role="status">
 			<span class="sr-only">Loading...</span>
 		</div>
@@ -62,17 +61,22 @@
 						<div class="col-10">
 							<nav class="site-navigation text-right" role="navigation">
 								<div class="container">
-									<div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#"
-											class="site-menu-toggle js-menu-toggle text-black"><span
-												class="icon-menu h3"></span></a></div>
-
-									<ul class="site-menu js-clone-nav d-none d-lg-block">
-										<li><a href="index.html#home">Home</a></li>
-										<li><a href="index.html#about">About</a></li>
-										<li><a href="index.html#services">Services</a></li>
-										<li><a href="index.html#culture">Values</a></li>
-										<li><a href="index.html#contact">Contact</a></li>
+									<ul class="site-menu">
+										<li class="active"><a href="index.html">首页</a></li>
+										<li><a href="#about">关于我们</a></li>
+										<li><a href="#product">产品简介</a></li>
+										<li><a href="#knowledge">知识论坛</a></li>
+										<li><a href="#contact">联系我们</a></li>
 									</ul>
+									<button id="btnGroupDrop1" type="button"
+										class="btn btn-light btn-sm dropdown-toggle" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										🇨🇳中文
+									</button>
+									<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+										<a class="dropdown-item language-cn" href="#">🇨🇳 中文</a>
+										<a class="dropdown-item language-en" href="#">🇬🇧 Enlish</a>
+									</div>
 								</div>
 							</nav>
 						</div>
@@ -83,7 +87,7 @@
 		<div class="site-blocks-cover inner-page overlay" style="background-image: url(images/product_suger.jpg);"
 			data-aos="fade" data-stellar-background-ratio="0.5">
 			<div class="row align-items-center justify-content-center">
-				<div class="col-md-7 text-center" data-aos="fade">
+				<div class="col-md-7 text-center product-banner" data-aos="fade">
 					<h1 class="text-uppercase">姜黄爆汁软糖</h1>
 					<span class="caption d-block text-white">普特健康</span>
 				</div>
@@ -96,80 +100,77 @@
 				<p>
 					<meta charset="utf-8">
 				</p>
-				<p
-					style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-					<strong>产品简介：</strong></p>
-				<ul
-					style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+				<p class="chapter"
+					style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 28px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 800; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+					产品简介：</p>
+				<ul class="chapter-character"
+					style="margin-top:26px; margin-left:56px; list-style: disc;color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
 					<li>添加德国WACKER 公司CAVACURMIN&reg; 即一种高生物利用度的姜黄素粉末，将姜黄素的生物利用度提高达40倍</li>
 					<li>每袋含69mg有效姜黄提取物</li>
 					<li>软糖</li>
 				</ul>
-				<p
-					style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-					姜黄植物来自东南亚，已有数千年的历史，被用作天然的消化助剂和烹饪香料。像姜一样，它来自姜科，它的健康益处来自其根。</p>
-				<p
-					style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-					姜黄 （turmeric
-					）是天然超级植物，姜黄素（curcuminoids）是姜黄中的活性植物化合物，占姜黄总量的2-6％。Curcumin是主要的姜黄素，已被确定为其最重要的活性成分，这也是姜黄呈现出黄色的原因。
-				</p>
-				<p
-					style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-					医学研究表明姜黄素具有 降血脂、降胆固醇、抗肿瘤、抗炎、利胆、 抗氧化、抗衰老消除自由基、 修复肺纤维化等作用，科学家新发现姜黄素有助治疗耐药结核病。</p>
-
-				<div class="products-box">
-					<div class="swiper-container" id="swiper-suger">
-
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img src="images/trust.jpg" alt="Image" class="img-fluid">
+				<div style="margin-top:86px;" class="chapter-desc">
+					<p
+						style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+						姜黄植物来自东南亚，已有数千年的历史，被用作天然的消化助剂和烹饪香料。像姜一样，它来自姜科，它的健康益处来自其根。</p>
+					<p
+						style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+						姜黄 （turmeric
+						）是天然超级植物，姜黄素（curcuminoids）是姜黄中的活性植物化合物，占姜黄总量的2-6％。Curcumin是主要的姜黄素，已被确定为其最重要的活性成分，这也是姜黄呈现出黄色的原因。
+					</p>
+					<p
+						style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+						医学研究表明姜黄素具有 降血脂、降胆固醇、抗肿瘤、抗炎、利胆、 抗氧化、抗衰老消除自由基、 修复肺纤维化等作用，科学家新发现姜黄素有助治疗耐药结核病。</p>
+				</div>
+				<div class="product-box">
+					<div class="product-swiper">
+						<div class="swiper-container" id="swiper-tomato">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="images/respect.jpg" alt="Image" class="img-fluid">
+								</div>
 							</div>
-							<div class="swiper-slide">
-								<img src="images/teamwork.jpg" alt="Image" class="img-fluid">
-							</div>
-							<div class="swiper-slide">
-								<img src="images/respect.jpg" alt="Image" class="img-fluid">
-							</div>
+							<div class="swiper-button-prev  swiper-button-black"></div>
+							<!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+							<div class="swiper-button-next  swiper-button-black"></div>
+							<!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+							<div class="swiper-pagination"></div>
 						</div>
-
 					</div>
-					<div class="products-des">
+					<div class="product-instructions">
 						<p
-							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-							<strong>配料：</strong></p>
+							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 800; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+							配料：</p>
 						<p
-							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-							<strong>配料：</strong></p>
-						<p
-							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
 							请务必阅读标签</p>
 						<p
-							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
 							麦芽糖浆、白砂糖、麦芽糖醇液、脱色脱酸浓缩苹果清汁、甘油、食用葡萄糖、芒果泥、果胶、胶原蛋白肠衣、黄原胶、刺槐豆胶、柠檬酸钠、柠檬酸、乳酸、DL-苹果酸、乳酸钠、姜黄、食用香料、植物油、巴西棕榈蜡
 						</p>
 						<p
-							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-							<strong>食用方式及食用量：</strong></p>
+							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 800; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+							食用方式及食用量：</p>
 						<p
-							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
 							每日建议量不应超过14粒软糖。</p>
 						<p
-							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-							<strong>适用于：</strong></p>
+							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 800; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+							适用于：</p>
 						<p
-							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
 							素食主义者。</p>
 						<p
-							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-							<strong>本产品不含有</strong>：</p>
+							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 800; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+							本产品不含有：</p>
 						<p
-							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
 							不含人造色素，调味剂或甜味剂。没有淀粉，没有玉米，没有牛奶，没有乳糖，没有大豆，没有麸质，没有小麦，没有酵母，没有猪产品。</p>
 						<p
-							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-							<strong>注意事项：</strong></p>
+							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 800; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+							注意事项：</p>
 						<p
-							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+							style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
 							食品补充剂不能替代多样化，均衡的饮食和健康的生活方式。如果您正在怀孕，母乳喂养，服用任何药物或在医学监督下使用，请在使用前咨询医生或医疗保健专业人员。如果发生不良反应，请停止使用并咨询医生。请将本品放在儿童不能接触的地方。储存在阴凉，干燥的地方。如果盖下的密封件损坏或丢失，请不要使用。
 						</p>
 					</div>
@@ -177,58 +178,6 @@
 				</div>
 
 			</div>
-
-
-			<!-- <p
-          style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-          <strong>Description:</strong></p>
-        <ul
-          style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-          <li>Contains CAVACURMIN&reg; a highly bioavailable curcumin powder with improved bioavailability by 40 times
-            from WACKER Germany</li>
-          <li>Each bag contains 69mg of effective turmeric extract</li>
-          <li>Soft gummies</li>
-        </ul>
-        <p
-          style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-          The turmeric plant hails from South East Asia and has been used for thousands of years as a natural aid for
-          digestion as well as a cooking spice. Like ginger, it is from the Zingiberaceae family, and its health
-          benefits come from its roots.</p>
-        <p
-          style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-          Turmeric is a natural super botanical. Curcuminoids are the active plant compounds found in turmeric and make
-          up 2-6% of it in total. Curcumin is the main curcuminoid and has been identified as its most important active
-          ingredient. It&rsquo;s also what makes turmeric yellow.</p>
-        <p
-          style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-          Application: antioxidant, anti-inflammatory, support joints, muscles, liver, lung function.</p>
-        <p
-          style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-          <strong>Ingredients:</strong></p>
-        <p
-          style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-          Always read the label</p>
-        <p
-          style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-          Malt Syrup, Sugar, Maltitol Liquid, Concentrated Apple Juice, Glycerin, Edible Glucose, Mango Puree, Pectin,
-          Collagen Casing, Xanthan Gum, LBG, Sodium Citrate, Citric Acid, Lactic Acid, DL-Malic Acid、Sodium Lactate,
-          CAVACURMIN&reg; Curcumin Complex, Flavor, Vegetable Oil, Carnauba Wax etc.</p>
-        <p
-          style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-          <strong>Free From:</strong></p>
-        <p
-          style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-          No Artificial Colours, Flavours or Sweeteners. No Starch, No Corn, No Milk, No Lactose, No Soya, No Gluten, No
-          Wheat, No Yeast, No Fish, No Porcine.</p>
-        <p
-          style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-          <strong>Advisory Information:</strong></p>
-        <p
-          style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
-          Food supplements must not be used as a substitute for a varied and balanced diet and a healthy lifestyle. If
-          you are pregnant, breastfeeding, taking any medications or under medical supervision, please consult a doctor
-          or healthcare professional before use. Discontinue use and consult a doctor if adverse reactions occur. Keep
-          out of reach of children. Store in a cool, dry place. Do not use if seal under cap is broken or missing.</p> -->
 		</div>
 	</div>
 	<!-- Footer -->
@@ -306,7 +255,6 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.stellar.min.js"></script>
 	<script src="js/swiper.min.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script> -->
 
 
 
@@ -315,6 +263,7 @@
 	<script src="js/aos.js"></script>
 
 	<script src="js/main.js"></script>
+	<script src="js/language.js"></script>
 
 </body>
 

@@ -18,13 +18,15 @@ $(".language-en").on("click", function () {
 function cnSelect () {
     $('#btnGroupDrop1').html("🇨🇳 中文");
     getlanguageJson("./language/index_cn.json", translateIndexPages);
-    getlanguageJson("./language/products_cn.json", translateProductsPages);
+    getlanguageJson("./language/products_tomato_cn.json", translateProductsPages);
+    getlanguageJson("./language/products_suger_cn.json", translateProductsPages);
     window.localStorage.setItem("language", "cn");
 }
 function enSelect () {
     $('#btnGroupDrop1').html("🇬🇧 Enlish");
     getlanguageJson("./language/index_en.json", translateIndexPages);
-    getlanguageJson("./language/products_en.json", translateProductsPages);
+    getlanguageJson("./language/products_tomato_en.json", translateProductsPages);
+    getlanguageJson("./language/products_suger_en.json", translateProductsPages);
     window.localStorage.setItem("language", "en")
 }
 
@@ -129,7 +131,6 @@ function translateProductsPages (data) {
         })
         // 使用说明
         $(".product-instructions p").each(function (index) {
-            console.log('object', $(".product-instructions p"))
             $(this).text(data["product-instructions"][index])
         })
     } else {
