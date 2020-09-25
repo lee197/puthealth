@@ -1,4 +1,13 @@
-
+.setting-language{
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+.language-cn,.language-en{
+    cursor: pointer;
+    padding:6px;
+    color: rgba(0, 0, 0, 0.6);
+}
 
 
 .product-box{

@@ -16,12 +16,14 @@ $(".language-en").on("click", function () {
 
 
 function cnSelect () {
-    $('#btnGroupDrop1').html("🇨🇳 中文");
+    $(".language-cn").css("color", "#239b3a")
+    $(".language-en").css("color", "rgba(0, 0, 0, 0.6)")
     getlanguageJson("./language/index_cn.json", translateIndexPages);
     window.localStorage.setItem("language", "cn");
 }
 function enSelect () {
-    $('#btnGroupDrop1').html("🇬🇧 Enlish");
+    $(".language-en").css("color", "#239b3a")
+    $(".language-cn").css("color", "rgba(0, 0, 0, 0.6)")
     getlanguageJson("./language/index_en.json", translateIndexPages);
     window.localStorage.setItem("language", "en")
 }
