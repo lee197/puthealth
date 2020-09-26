@@ -25,6 +25,9 @@
     width: 40%;
 
 }
+.navbar{
+    display: none;
+}
 
 @media (max-width: 768px) {
     .product-box{
@@ -38,8 +41,43 @@
     }
     
     .product-instructions{
-        padding-left: 20px;
+        padding-left: 0;
         width: 90%;
     
     }
+}
+
+/* header 响应式 */
+@media (max-width: 767px) {
+    .web_menu{
+        display: none;
+    }
+    .navbar{        
+        width: 100%;
+        display: block;
+    }
+    .navbar-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo_lyne{
+        margin: 0; 
+        height: auto;
+    }
+    .navbar-nav>li{
+        height: 36px;
+        line-height: 36px;
+        
+    }
+    .navbar-nav>li:hover{
+        padding: 0 16px;
+        background-color: #ccc;
+    }
+    .setting-language{
+        padding: 0;
+        justify-content: flex-end;
+    }
+    
 }
