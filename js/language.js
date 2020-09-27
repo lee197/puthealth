@@ -43,8 +43,10 @@ function getlanguageJson (url, translatePages) {
 function translateIndexPages (data) {
     if (data) {
         // #### nav
+        let nav = data.nav;
+        let navArr = nav.concat(nav);
         $(".site-menu li a").each(function (index) {
-            $(this).text(data.nav[index])
+            $(this).text(navArr[index])
         });
 
         // #### banner 4个
