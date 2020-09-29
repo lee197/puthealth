@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 
@@ -51,10 +52,42 @@
             <div class="container">
                 <div class="site-navbar bg-light">
                     <div class="row align-items-center">
-                        <div class=" logo_lyne">
+                        <!-- mobile-menu -->
+                        <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+                            <div class="container">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="#">
+                                        <div class=" logo_lyne">
+                                            <img src="images/logo-small.jpg" alt="Image" class="img-fluid">
+                                        </div>
+                                    </a>
+                                    <button style="border:none" type="button" class="navbar-toggle"
+                                        data-toggle="collapse" data-target=".navbar-collapse">
+                                        <img width="20" src="images/hamburger-menu.png" alt="Image" class="img-fluid">
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse">
+                                    <ul class="nav navbar-nav site-menu">
+                                        <li class="active"><a href="#home">首页</a></li>
+                                        <li><a href="#about">关于我们</a></li>
+                                        <li><a href="#product">产品简介</a></li>
+                                        <li><a href="#knowledge">知识论坛</a></li>
+                                        <li><a href="#contact">联系我们</a></li>
+                                    </ul>
+                                    <div class="setting-language">
+                                        <span class="language-cn active">中文</span>
+                                        <span>|</span>
+                                        <span class="language-en">EN</span>
+                                    </div>
+                                </div><!-- /.nav-collapse -->
+                            </div><!-- /.container -->
+                        </div>
+                        <!-- mobile-menu -->
+
+                        <div class=" logo_lyne web_menu">
                             <img src="images/logo-small.jpg" alt="Image" class="img-fluid">
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 web_menu">
                             <nav class="site-navigation text-right" role="navigation">
                                 <div class="container">
                                     <ul class="site-menu">
@@ -64,14 +97,10 @@
                                         <li><a href="#knowledge">知识论坛</a></li>
                                         <li><a href="#contact">联系我们</a></li>
                                     </ul>
-                                    <button id="btnGroupDrop1" type="button"
-                                        class="btn btn-light btn-sm dropdown-toggle" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">
-                                        🇨🇳中文
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                        <a class="dropdown-item language-cn" href="#">🇨🇳 中文</a>
-                                        <a class="dropdown-item language-en" href="#">🇬🇧 Enlish</a>
+                                    <div class="setting-language">
+                                        <span class="language-cn active">中文</span>
+                                        <span>|</span>
+                                        <span class="language-en">EN</span>
                                     </div>
                                 </div>
                             </nav>
@@ -98,8 +127,16 @@
                 data-aos="fade" data-stellar-background-ratio="0.5">
                 <div class="container">
                     <div class="row">
-                        <div style=" margin-left: 35px; margin-top: 20%" class="puthealthbanner2">
-                            <h2 style="color: white; font-size: 45px;">满怀理想，崇尚创新，追求极致,奋发拼搏 </h2>
+                        <div class="puthealthbanner2 main_page_dream">
+                            <h2 class="puthealthbanner2-box" style="color: white; font-size: 45px; letter-spacing:10px">
+                                <span class="puthealthbanner2-desc desc1">满怀理想</span>
+                                <br />
+                                <span class="puthealthbanner2-desc desc2">崇尚创新</span>
+                                <br />
+                                <span class="puthealthbanner2-desc desc3">追求极致</span>
+                                <br />
+                                <span class="puthealthbanner2-desc desc4">奋发拼搏</span>
+                            </h2>
                         </div>
                     </div>
                 </div>
@@ -132,7 +169,7 @@
                 data-aos="fade" data-stellar-background-ratio="0.5">
                 <div class="container">
                     <div class="row">
-                        <div style="margin-left: 40px; margin-top: 35%" class="puthealthbanner4">
+                        <div class="main_page_nutrition puthealthbanner4">
                             <h2 style="color: white; font-size: 45px">汇聚天然营养，优选核心科技,共享品质生活</h2>
                         </div>
                     </div>
@@ -192,22 +229,28 @@
                     <div class="col-md-12 block-13 nav-direction-white">
                         <div class="nonloop-block-13 owl-carousel">
                             <div class="media-image">
-                                <img src="images/trust.jpg" alt="Image" class="img-fluid">
-                                <div class="media-image-body media-image-body1">
-                                    <a href="product-tomato.html">
-                                        <h2 class="font-secondary text-uppercase">番茄红素</h2>
-                                    </a>
-                                    <p>以海洋鱼类中提取的鱼油为原料，采用挪威PronovaPure高含量鱼油经过先进工艺精制而成。含有的人体必需Omega-3系多不饱和脂肪酸EPA和 DHA</p>
-                                </div>
+                                <a href="product-tomato.html">
+                                    <img src="images/trust.jpg" alt="Image" class="img-fluid">
+                                    <div class="media-image-body media-image-body1">
+                                        <a href="product-tomato.html">
+                                            <h2 class="font-secondary text-uppercase">番茄红素</h2>
+                                        </a>
+                                        <p>以海洋鱼类中提取的鱼油为原料，采用挪威PronovaPure高含量鱼油经过先进工艺精制而成。含有的人体必需Omega-3系多不饱和脂肪酸EPA和 DHA
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="media-image">
-                                <img src="images/teamwork.jpg" alt="Image" class="img-fluid">
-                                <div class="media-image-body media-image-body2">
-                                    <a href="product-fish.html">
-                                        <h2 class="font-secondary text-uppercase">百家康牌鱼油胶囊</h2>
-                                    </a>
-                                    <p>以海洋鱼类中提取的鱼油为原料，采用挪威PronovaPure高含量鱼油经过先进工艺精制而成。含有的人体必需Omega-3系多不饱和脂肪酸EPA和 DHA</p>
-                                </div>
+                                <a href="product-fish.html">
+                                    <img src="images/teamwork.jpg" alt="Image" class="img-fluid">
+                                    <div class="media-image-body media-image-body2">
+                                        <a href="product-fish.html">
+                                            <h2 class="font-secondary text-uppercase">百家康牌鱼油胶囊</h2>
+                                        </a>
+                                        <p>以海洋鱼类中提取的鱼油为原料，采用挪威PronovaPure高含量鱼油经过先进工艺精制而成。含有的人体必需Omega-3系多不饱和脂肪酸EPA和 DHA
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
                             <!--                        <div class="media-image">-->
                             <!--                            <img src="images/innovation.jpg" alt="Image" class="img-fluid">-->
@@ -218,13 +261,15 @@
                             <!--                            </div>-->
                             <!--                        </div>-->
                             <div class="media-image">
-                                <img src="images/respect.jpg" alt="Image" class="img-fluid">
-                                <div class="media-image-body media-image-body3">
-                                    <a href="product-suger.html">
-                                        <h2 class="font-secondary text-uppercase">姜黄素爆汁软糖</h2>
-                                    </a>
-                                    <p>姜黄植物来自东南亚，已有数千年的历史，被用作天然的消化助剂和烹饪香料。像姜一样，它来自姜科，它的健康益处来自其根。</p>
-                                </div>
+                                <a href="product-suger.html">
+                                    <img src="images/respect.jpg" alt="Image" class="img-fluid">
+                                    <div class="media-image-body media-image-body3">
+                                        <a href="product-suger.html">
+                                            <h2 class="font-secondary text-uppercase">姜黄素爆汁软糖</h2>
+                                        </a>
+                                        <p>姜黄植物来自东南亚，已有数千年的历史，被用作天然的消化助剂和烹饪香料。像姜一样，它来自姜科，它的健康益处来自其根。</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -238,7 +283,7 @@
             <div class="module-inner not-animated container" data-animate="fadeInUp" data-delay="200">
                 <div class="page-width">
                     <div class="row mb-5">
-                        <div class="col-md-12 text-center" data-aos="fade" id="service">
+                        <div class="col-md-12 text-center" id="service">
                             <span class="caption d-block mb-2 font-secondary font-weight-bold">新闻&讨论</span>
                             <h2 class="site-section-heading text-uppercase text-center font-secondary">知识论坛</h2>
                         </div>
@@ -332,7 +377,7 @@
         <div id="contact">
             <div class="container">
                 <div class="row mb-5">
-                    <div class="col-md-12 title" data-aos="fade">
+                    <div class="col-md-12 title">
                         <h2 class="site-section-heading text-center text-uppercase">联系我们</h2>
                     </div>
                 </div>

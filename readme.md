@@ -58,3 +58,12 @@ Email: enquiry@lynechemicals.com
 *blue and white theme. Remove the green colour.*
 
 *Colour code: 300C*
+
+
+### 迭代
+    2020-09-26
+- 联系我们、知识论坛的标题忽隐忽现 
+- navigation bar 在web端的时候没有切换中英文 ✅
+- 知识论坛的文章标题稍微大一点加粗
+- 产品轮播图，点击放大
+- 产品文字标题样式调整

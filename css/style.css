@@ -2255,7 +2255,7 @@ a:hover {
     clear: both;
     height: 71px;
     position: relative;
-    width: 1004px;
+    /* width: 1004px; */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 16px;
@@ -2307,13 +2307,46 @@ table {
 
 .main_page_ice {
     margin-left: 40px;
-    margin-top: 10%
+    margin-top: 40%
+}
+.main_page_ice>h2{
+    background-color: rgba(221,221,221,0.5);
+    padding: 12px 14px;
+}
+.main_page_nutrition {
+    margin-left: 40px;
+    margin-top: 50%
 }
 
-@media (max-width: 768px) {
+.main_page_nutrition>h2{
+    background-color: rgba(221,221,221,0.5);
+    padding: 12px 14px;
+}
+.main_page_dream{
+    margin-left:5%;
+    margin-top: 20%;
+}
+.puthealthbanner2-box{
+    writing-mode:vertical-lr;
+}
+.puthealthbanner2-desc{
+    margin-right: 8px;
+    display: inline-block;
+}
+@media (max-width: 1024px) {
     .main_page_ice {
         margin-left: 40px;
+        margin-top: 60%
+    }
+    .main_page_nutrition {
+        margin-left: 40px;
         margin-top: 70%
+    }
+}
+@media (max-width: 414px) {
+    .main_page_ice {
+        margin-left: 40px;
+        margin-top: 15%
     }
 }
 
@@ -2766,12 +2799,23 @@ table {
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
-
+.headlines-list-2col{
+    width: 80%;
+    margin: auto;
+}
 .headlines-list-2col .headlines-content {
     width: 48%;
     float: left;
     display: inline;
     margin-right: 5%;
+}
+@media (max-width: 1023px) {
+    .headlines-list-2col .headlines-content {
+        width: 48%;
+        float: none;
+        display: inline;
+        margin-right: 5%;
+    }
 }
 .headlines-list-2col .headlines-content p {
     margin-bottom: 15px;

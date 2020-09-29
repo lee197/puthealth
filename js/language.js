@@ -1,18 +1,32 @@
+var language = window.localStorage.getItem("language");
+if (language && language === "en") {
+    enSelect();
+} else {
+    cnSelect();
+}
+
+
 $(".language-cn").on("click", function () {
-    // 替换 button 的 content
-    $('#btnGroupDrop1').html("🇨🇳 中文");
-    getlanguageJson("./language/index_cn.json", translateIndexPages);
-    getlanguageJson("./language/products_cn.json", translateProductsPages);
+    cnSelect();
 });
 
 $(".language-en").on("click", function () {
-    // 替换 button 的 content
-    $('#btnGroupDrop1').html("🇬🇧 Enlish");
-    getlanguageJson("./language/index_en.json", translateIndexPages);
-    getlanguageJson("./language/products_en.json", translateProductsPages);
-
+    enSelect();
 });
 
+
+function cnSelect () {
+    $(".language-cn").css("color", "#239b3a")
+    $(".language-en").css("color", "rgba(0, 0, 0, 0.6)")
+    getlanguageJson("./language/index_cn.json", translateIndexPages);
+    window.localStorage.setItem("language", "cn");
+}
+function enSelect () {
+    $(".language-en").css("color", "#239b3a")
+    $(".language-cn").css("color", "rgba(0, 0, 0, 0.6)")
+    getlanguageJson("./language/index_en.json", translateIndexPages);
+    window.localStorage.setItem("language", "en")
+}
 
 function getlanguageJson (url, translatePages) {
     $.ajax({
@@ -29,13 +43,26 @@ function getlanguageJson (url, translatePages) {
 function translateIndexPages (data) {
     if (data) {
         // #### nav
+        let nav = data.nav;
+        let navArr = nav.concat(nav);
         $(".site-menu li a").each(function (index) {
-            $(this).text(data.nav[index])
+            $(this).text(navArr[index])
         });
 
         // #### banner 4个
         for (let i = 0; i < 4; i++) {
-            $(".puthealthbanner" + (i + 1) + " h2").text(data.banner[i]);
+            if (i !== 1) {
+                $(".puthealthbanner" + (i + 1) + " h2").text(data.banner[i]);
+            } else {
+                // 特殊处理的banner
+                $(".puthealthbanner2 .puthealthbanner2-box").each(function (index) {
+                    $(this).css("writing-mode", data.banner[1][4]);
+                });
+                for (let j = 0; j < 4; j++) {
+                    $(".puthealthbanner2 .desc" + (j + 1)).text(data.banner[1][j]);
+                }
+
+            }
         }
 
         // #### about 
@@ -91,7 +118,21 @@ function translateIndexPages (data) {
 
 function translateProductsPages (data) {
     if (data) {
-
+        // banner 
+        $(".product-banner h1").text(data.banner.title);
+        $(".product-banner span").text(data.banner.vender);
+        // 产品简介
+        $(".chapter").text(data.chapter);
+        $(".chapter-character li").each(function (index) {
+            $(this).text(data["chapter-character"][index])
+        })
+        $(".chapter-desc p").each(function (index) {
+            $(this).text(data["chapter-desc"][index])
+        })
+        // 使用说明
+        $(".product-instructions p").each(function (index) {
+            $(this).text(data["product-instructions"][index])
+        })
     } else {
         console.error('error;', "products翻译配置文件未获取到...")
     }
