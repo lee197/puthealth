@@ -158,7 +158,9 @@
                         <div class="swiper-container" id="swiper-tomato">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="images/trust.jpg" alt="Image" class="img-fluid">
+                                    <a href="images/trust.jpg" data-imagelightbox="b">
+                                        <img src="images/trust.jpg" alt="Image" class="img-fluid">
+                                    </a>
                                 </div>
                             </div>
                             <div class="swiper-button-prev  swiper-button-black"></div>
@@ -285,6 +287,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/imagelightbox.min.js"></script>
 
 
     <script src="js/jquery.waypoints.min.js"></script>
@@ -306,6 +309,37 @@
         });
         $(".language-en").on("click", function () {
             getlanguageJson("./language/products_tomato_en.json", translateProductsPages);
+
+        });
+
+        $(function () {
+
+            // ACTIVITY INDICATOR
+
+            var activityIndicatorOn = function () {
+                $('<div id="imagelightbox-loading"><div></div></div>').appendTo('body');
+            },
+                activityIndicatorOff = function () {
+                    $('#imagelightbox-loading').remove();
+                };
+            // OVERLAY
+
+            var overlayOn = function () {
+                $('<div id="imagelightbox-overlay"></div>').appendTo('body');
+            },
+                overlayOff = function () {
+                    $('#imagelightbox-overlay').remove();
+                };
+
+            //	WITH OVERLAY & ACTIVITY INDICATION
+
+            $('a[data-imagelightbox="b"]').imageLightbox(
+                {
+                    onStart: function () { overlayOn(); },
+                    onEnd: function () { overlayOff(); activityIndicatorOff(); },
+                    onLoadStart: function () { activityIndicatorOn(); },
+                    onLoadEnd: function () { activityIndicatorOff(); }
+                });
 
         });
     </script>
