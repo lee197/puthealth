@@ -1,0 +1,121 @@
+{
+    "nav": [
+        "Home",
+        "About Us",
+        "Products",
+        "News",
+        "Connect Us"
+    ],
+    "banner": [
+        "Meet is beautiful",
+        [
+            "Full of ideals",
+            "advocating innovation",
+            "pursuing the ultimate",
+            "hard work",
+            "unset"
+        ],
+        "Every unique product, every exciting moment,all are based on extremely hard work and rely on the true feelings of consumers",
+        "Gather natural nutrition and optimize core technology,sharing quality life"
+    ],
+    "about": {
+        "title": [
+            "Health Product Leader",
+            "who are we?"
+        ],
+        "content": [
+            "Beijing PuteHealth Pharmaceutical Technology Co., ltd. was established in March 2017 as a wholly-owned subsidiary of Beijing Fengli Jingqiu Pharmaceutical Co., Ltd., located in BDA Beijing.",
+            "PuteHealth advocates innovation, pursues excellence, discovers ideals, and works hard. Adhering to the business philosophy of 'gathering natural nutrition, optimizing core technology, and sharing quality life', we provide consumers with comprehensive nutrition, health and care through diversified products and services.",
+            "In the past two decades, Fengli Jingqiu has established long-term and friendly strategic partnerships with numerous well-known food and pharmaceutical manufacturers around the globe. Thanks to Fengli Jingqiu’s strong supplier system and technical support background, PuteHealth is committed to satisfying the growing demand on health foods, dietary supplements, special medical nutritional foods and cosmetics, as well as the introduction and promotion of new drug delivery systems.",
+            "Products have been developed and will be launched soon include high-content fish oil soft capsules, lycopene vitamin E soft capsules, turmeric pop juice gummies, probiotic solid beverage, vegetable protein and concentrated whey protein powder, stem cell super care ampoules, etc. ",
+            "PuteHealth aims to bring high quality life to individual consumer. She respects life and health and fulfills goodliness. With the help from PuteHealth, we are eager to see the world in a better place."
+        ]
+    },
+    "products": {
+        "title": [
+            "Health Products & Nutrition",
+            "Product Introduction"
+        ],
+        "product-1": {
+            "title": "Lycopene",
+            "content": "Using fish oil extracted from marine fish as raw materials, it is refined by advanced technology using Norwegian PronovaPure high-content fish oil. Contains essential Omega-3 polyunsaturated fatty acids EPA and DHA"
+        },
+        "product-2": {
+            "title": "Bai Jia Kang Fish Oil Softgel",
+            "content": "Using fish oil extracted from marine fish as raw materials, it is refined by advanced technology using Norwegian PronovaPure high-content fish oil. Contains essential Omega-3 polyunsaturated fatty acids EPA and DHA"
+        },
+        "product-3": {
+            "title": "Curcumin Juice",
+            "content": "The turmeric plant comes from Southeast Asia and has a history of thousands of years. It has been used as a natural digestive aid and cooking spice. Like ginger, it comes from the ginger family, and its health benefits come from its roots."
+        }
+    },
+    "news": {
+        "title": [
+            "News & Discussion",
+            "Knowledge Forum"
+        ],
+        "latast": {
+            "title": "The proportion of Tencent’s game revenue declined for two consecutive quarters, and revenue from payment, cloud computing and other businesses",
+            "infor": "Not only did Tencent give high-profile money on the occasion of Double Eleven when Ali encouraged everyone to spend money, but now the fast-growing business of financial reports also happens to be benchmarked with Alipay and Alibaba Cloud. Tonight, Tencent released today’s unaudited third-quarter financial report. The report shows that Tencent..."
+        },
+        "list": [
+            [
+                "7th",
+                "May 2018",
+                "Received 38 million yuan in A+ round investment, Le Shao Yao Technology uses the claw machine to make the offline version of the broad spot",
+                "36 Krypton learned that Le Shao Yao Technology, an offline public account promotion company, has completed a 38 million yuan A+ round of financing, and the investor is GF Xinde. As we all know, online traffic is expensive nowadays, and everyone's eyes are beginning to focus on offline. In addition to traditional subway and elevator advertisements, offline..."
+            ],
+            [
+                "7th",
+                "May 2018",
+                "After earning two years of fast money from online students, Koala Entertainment began to cut into the female crowd to do something",
+                "Since 2014, the term online movie has gradually entered people's attention. At that time, there were hundreds of thousands of stories that won the box office of hundreds of thousands of production costs. Koala Entertainment entered the game in the wild era of online student content. In an interview with 36Kr, Koala Entertainment..."
+            ],
+            [
+                "7th",
+                "May 2018",
+                "Exclusive | It is rumored that Didi will soon be connected to ofo, and the pattern of shared bicycle wars may change",
+                "36 Krypton obtained news from ofo. It is possible that in April of this year, ofo will be connected to the App of Didi Chuxing. At that time, users can directly use ofo's services on Didi. This matter has been frequently put on the agenda recently. The internal news is that it may be picked up next month..."
+            ]
+        ]
+    },
+    "connect": {
+        "title": [
+            "Connect Us"
+        ],
+        "form": [
+            [
+                "Name",
+                "Please enter your name"
+            ],
+            [
+                "company name",
+                "Please enter your company name"
+            ],
+            [
+                "email",
+                "Please enter your email"
+            ],
+            [
+                "phone",
+                "Please enter contact information"
+            ],
+            [
+                "address",
+                "Please enter the address"
+            ],
+            [
+                "content",
+                "Please enter the content you want to consult"
+            ]
+        ],
+        "subumit": "Send",
+        "adress": {
+            "title": "Contact information:",
+            "content": [
+                "Beijing Economic and Technological Development Zone, Kechuang 13th Street, No. 31 Yard 2, District 2, Room 401-1, Building 15",
+                "E: enquiry@lynechemicals.com"
+            ]
+        }
+    }
+}
