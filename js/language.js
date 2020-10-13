@@ -130,7 +130,10 @@ function translateProductsPages (data) {
             $(this).text(data["chapter-desc"][index])
         })
         // 使用说明
-        $(".product-instructions p").each(function (index) {
+        $(".product-instructions .site-section-heading-title").each(function (index) {
+            $(this).text(data["product-instructions-title"][index])
+        })
+        $(".product-instructions .site-section-heading-content").each(function (index) {
             $(this).text(data["product-instructions"][index])
         })
     } else {
