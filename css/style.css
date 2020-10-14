@@ -585,7 +585,7 @@ a:hover {
     bottom: 0;
     right: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.2);
+    /* background: rgba(0, 0, 0, 0.2); */
 }
 
 .site-blocks-cover, .site-blocks-cover .row {
@@ -594,8 +594,12 @@ a:hover {
 }
 
 .site-blocks-cover.inner-page, .site-blocks-cover.inner-page .row {
-    min-height: 600px;
+    min-height: 450px;
     height: calc(80vh);
+}
+.custom-banner{
+    min-height: 450px !important;
+    height: 450px !important;
 }
 
 .site-blocks-cover .sub-text {
