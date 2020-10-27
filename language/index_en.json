@@ -4,7 +4,7 @@
         "About Us",
         "Products",
         "News",
-        "Connect Us"
+        "Contact Us"
     ],
     "banner": [
         "Meet is beautiful",
@@ -15,8 +15,8 @@
             "hard work",
             "unset"
         ],
-        "Every unique product, every exciting moment,all are based on extremely hard work and rely on the true feelings of consumers",
-        "Gather natural nutrition and optimize core technology,sharing quality life"
+        "Every unique product, every exciting moment,are all based on extreme hard work and rely on the true feelings of consumers",
+        "Gather natural nutrition and optimize core technology,sharing quality of life"
     ],
     "about": {
         "title": [
@@ -25,8 +25,8 @@
         ],
         "content": [
             "Beijing PuteHealth Pharmaceutical Technology Co., ltd. was established in March 2017 as a wholly-owned subsidiary of Beijing Fengli Jingqiu Pharmaceutical Co., Ltd., located in BDA Beijing.",
-            "PuteHealth advocates innovation, pursues excellence, discovers ideals, and works hard. Adhering to the business philosophy of 'gathering natural nutrition, optimizing core technology, and sharing quality life', we provide consumers with comprehensive nutrition, health and care through diversified products and services.",
-            "In the past two decades, Fengli Jingqiu has established long-term and friendly strategic partnerships with numerous well-known food and pharmaceutical manufacturers around the globe. Thanks to Fengli Jingqiu’s strong supplier system and technical support background, PuteHealth is committed to satisfying the growing demand on health foods, dietary supplements, special medical nutritional foods and cosmetics, as well as the introduction and promotion of new drug delivery systems.",
+            "PuteHealth advocates innovation, pursues excellence, discovers ideals and hard work. Adhering to the business philosophy of 'gathering natural nutrition, optimizing core technology, and sharing quality of life'. We provide consumers with comprehensive nutrition, health and care through diversified products and services.",
+            "In the past two decades, Fengli Jingqiu has established long-term and friendly strategic partnerships with numerous well-known food and pharmaceutical manufacturers around the globe. Thanks to Fengli Jingqiu’s strong supplier system and technical support background, PuteHealth is committed to satisfying the growing demand of health foods, dietary supplements, special medical nutritional foods and cosmetics, as well as the introduction and promotion of new drug delivery systems.",
             "Products have been developed and will be launched soon include high-content fish oil soft capsules, lycopene vitamin E soft capsules, turmeric pop juice gummies, probiotic solid beverage, vegetable protein and concentrated whey protein powder, stem cell super care ampoules, etc. ",
             "PuteHealth aims to bring high quality life to individual consumer. She respects life and health and fulfills goodliness. With the help from PuteHealth, we are eager to see the world in a better place."
         ]
@@ -81,7 +81,7 @@
     },
     "connect": {
         "title": [
-            "Connect Us"
+            "Contact Us"
         ],
         "form": [
             [
